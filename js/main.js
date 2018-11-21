@@ -162,7 +162,7 @@ AOS.init({
                 right: 'month,listYear'
             },
             
-            displayEventTime:false, 
+            displayEventTime:false,
             
             // THIS KEY WON'T WORK IN PRODUCTION!!!
             // To make your own Google API key, follow the directions here:
@@ -270,7 +270,6 @@ AOS.init({
 	// owl carousel
 	var major2Carousel = $('.js-carousel-2');
 	major2Carousel.owlCarousel({
-    items:4,
     loop:true,
     autoplay: true,
     stagePadding: 7,
@@ -301,7 +300,7 @@ AOS.init({
 
   $('.centernonloop').owlCarousel({
     center: true,
-    items: 3,
+    items: 1,
     loop: false,
     margin:10,
     dots: true,

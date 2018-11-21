@@ -35,7 +35,6 @@ max-width: 100%;
     max-width: 1000px;
     margin: 0 auto;
 }
-
 .menusubtitle{
     text-align: center;
 }
@@ -54,6 +53,9 @@ max-width: 100%;
     .sicon{
     margin-left:20px;
   }
+    .fix{
+        margin-top: -50px;
+    }
 }
 
 p, ul, ol {
