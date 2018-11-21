@@ -23,7 +23,17 @@ max-width: 100%;
     
 }
 .white{
-    background-color:white;
+    color: white;
+}
+
+.maroon{
+    background-color:#7E0606;
+    color: white;
+}
+
+#calendar{
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .menusubtitle{

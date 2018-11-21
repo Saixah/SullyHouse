@@ -19,6 +19,9 @@
 
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/aos.css">
+    
+    <link href='https://code.jquery.com/ui/1.12.1/themes/cupertino/jquery-ui.css' rel='stylesheet' />
+    <link rel='stylesheet' href="/css/fullcalendar.css"/>
 
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
@@ -41,7 +44,7 @@
           <ul class="list-unstyled">
             <li><a href="#section-home">Home</a></li>
             <li><a href="#section-about">About Us</a></li>
-            <li><a href="#section-menu">Our Menu</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
             <li><a href="#section-reservation">Book a Party</a></li>
             <li><a href="#section-contact">Contact</a></li>
           </ul>
@@ -94,656 +97,13 @@
           
         <div class="img_bg2" style="background-image: url(images/Sullys+House.png);" data-stellar-background-ratio=".5"></div>
      <!-- .section -->
+
+          
+          
         <!-- END ABOUT -->
-
-        <!-- MENU -->
-          <div class="section bg-light" id="section-menu" data-aos="fade-up">
-        <div class="menutitle">
-              <h2>Menu</h2>
-        </div>
-          <div class="container" id="menu">
-            <div class="row section-heading justify-content-center mb-1">
-              <div class="col-md-12 text-center">
-               
-              </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-md-12">
-                <ul class="nav site-tab-nav" id="pills-tab" role="tablist">
-                  <li class="nav-item">
-                    <a class="nav-link active" id="appetizers-tab" data-toggle="pill" href="#pills-appetizers" role="tab" aria-controls="pills-appetizers" aria-selected="true">Appetizers</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="qt-tab" data-toggle="pill" href="#pills-qt" role="tab" aria-controls="pills-qt" aria-selected="false">Quesadillas and Tacos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="salads-tab" data-toggle="pill" href="#pills-salads" role="tab" aria-controls="pills-salads" aria-selected="false">Salads</a>
-                  </li>
-                    <li class="nav-item">
-                    <a class="nav-link" id="sandwiches-tab" data-toggle="pill" href="#pills-sandwiches" role="tab" aria-controls="pills-sandwiches" aria-selected="false">Sandwiches</a>
-                  </li>
-                    <li class="nav-item">
-                    <a class="nav-link" id="wraps-tab" data-toggle="pill" href="#pills-wraps" role="tab" aria-controls="pills-wraps" aria-selected="false">Wraps</a>
-                  </li>
-                    <li class="nav-item">
-                    <a class="nav-link" id="pills-pizza-tab" data-toggle="pill" href="#pills-pizza" role="tab" aria-controls="pills-pizza" aria-selected="false">Pizza</a>
-                  </li>
-                </ul>
-                <div class="tab-content" id="pills-tabContent">
-                  <div class="tab-pane fade show active" id="pills-appetizers" role="tabpanel" aria-labelledby="pills-appertizers-tab">
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Cheesy Sully Sticks</h3>
-                        <p>Thin white pizza, but thicker, with more garlic and butter cut into strips. Served with homemade marinara dipping sauce. Add a side of ranch - $0.50</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$10</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                    
-                      <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Nachos</h3>
-                        <p>A pile of tortilla chips topped with nacho cheese, pico de gallo, guacamole, jalapenos and sour cream.<br> Add Chili $2, Pulled Pork $3, Grilled chicken breast $3, Seasoned Angus Ground Sirloin $3</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$10</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                      
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Chicken Tenders</h3>
-                        <p>Four strips of crispy fried chicken served with your choice of: BBQ, Hot Wing sauce, Ranch, Honey Mustard, Chipotle Mayo, or Bleu Cheese</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$7</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                    
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Jumbo or Boneless Wings</h3>
-                          <p>Our signature jumbo wings are first baked, then fried. Your choice of Hot Wing Sauce, Zesty BBQ or Naked (12 pieces)</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$12</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                      
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Creamy Hummus</h3>
-                          <p>Served with carrots, cucumbers and pita chips</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$10</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                      
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Fried Pickles</h3>
-                          <p>Beer Battered Jalepeno Pickle Spears, served with Chipotle Ranch</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$8</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                    
-                      <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Mozzarella Sticks</h3>
-                          <p>Italian seasoned mozzerella sticks served with marinara</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$8</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-    
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Mini Corndogs</h3>
-                          <p>Served with ranch dressing</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$7</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                      
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Fried Mac and Cheese</h3>
-                          <p>Like mom's...only fried</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$7</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                      
-                      
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Buffalo Style Chips</h3>
-                          <p>Homemade Potato Chips, topped with hot wing sauce and bleu cheese crumbles</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$7</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                      
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Homemade Chips</h3>
-                          <p>Crispy and crunchy potatoes</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$5</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                      
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>McSully's Fries</h3>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$6</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                      
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Sweet Potato Fries</h3>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$6</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                      
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Tater Tots</h3>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$6</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                      
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Chips and Salsa</h3>
-                          <p>Add Guacamole - $2</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$6</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                      
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Homemade Chili</h3>
-                          <p>Cup $6 | Bowl $8</p>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                      
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Soup of the Day</h3>
-                          <p>Cup $4 | Bowl $6</p>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                </div><!-- .appetizers -->
-
-                  <div class="tab-pane fade" id="pills-qt" role="tabpanel" aria-labelledby="pills-qt-tab">
-                    <h2 class="menusubtitle">Quesadillas</h2>
-                    <p class="menusubtitle">Served with Mozzarella, Cheddar Cheese, Sour Cream, and Pico de Gallo<br>Add Guacamole for $2<br></p>
-                      
-                      
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Cheese</h3>
-                          <p>Add pulled pork or seasoned angus ground sirloin $3</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$7</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                      
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Chicken</h3>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$10</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                      
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Pulled Pork</h3>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$9</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                        
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Roasted Veggie</h3>
-                          <p>Served with caramelized onions , roasted red peppers, egg plant, and zucchini</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$10</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                      
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Steak</h3>
-                          <p>Served with caramelized onions</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$12</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                      
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Black Bean Chop Steak</h3>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$12</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                      
-                      
-                    <h2 class="menusubtitle">Tacos</h2>
-                    <p class="menusubtitle">3 Per Order <br>Add $1 for Cheese, Onion, Cilantro, Lime, and Salsa.<br> Add $2 for guac.<br></p>
-                      
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Steak</h3>
-                          <p>Served with onion, cilanto, lime, and salsa</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$12</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                      
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Grilled Chicken</h3>
-                          <p>Served with shredded cheese, pico de gallo, lettuce and sour cream</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$9</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                      
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Pulled Pork</h3>
-                          <p>Served with salsa verde, lettuce and sour cream</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$9</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                        
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Grilled Veggie</h3>
-                          <p>Served with grilled red pepper, eggplant, caramelized onion, topped with lettuce</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$10</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                      
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Fried Cod</h3>
-                          <p>Served with chipotle mayo, seasoned shredded cabbage, topped with mango black bean salsa</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$11</strong>
-                      </div>
-                    </div> <!-- .menu-food-item --> 
-                      
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Grilled Mahi Mahi</h3>
-                          <p>Served with chipotle mayo, seasoned shredded cabbage, topped with mango black bean salsa</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$12</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                  </div><!-- Quesadillas and Tacos -->
-                    
-                  <div class="tab-pane fade" id="pills-salads" role="tabpanel" aria-labelledby="pills-salads-tab">
-        
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Chicken Caesar Salad</h3>
-                          <p>Romaine, shaved parmesan, grilled chicken and croutons served with caesar dressing.</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$10</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                      
-                      <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Italian Arugula Salad</h3>
-                          <p>Grilled chicken, avocado and shaved parmesan on a bed of baby arugula served with homemade lemon vinaigrette.</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$13</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                      
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Black and Bleu Salad</h3>
-                          <p>Romain, red onion, tomato and bleu cheese crumbles. Topped with grilled chopped NY Steak, served with homemade balsamic vinaigrette.</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$15</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                      
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Southwest Salad</h3>
-                          <p>Romaine, avocado, pico de gallo, black beans, shredded cheddar cheese and crispy tortilla. Served with chipotle ranch.<br> Add Grilled OR Fried chicken $3, Pulled pork $3, Seasoned ground beef $3 or black bean burger $4, Steak $5</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$10</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->
-                      
-                     <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Chopped Grilled Chicken Salad</h3>
-                          <p>Chopped romaine , chicken breast, bacon, tomato, carrots, red cabbage and shredded cheddar cheese with homemade balsamic vinaigrette.</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$11</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->      
-                      
-                      <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Asian Chicken Salad</h3>
-                          <p>A blend of romaine with red cabbage, carrots, pineapple & chow mein noodles. Topped with grilled chicken and served with sesame vinaigrette.</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$13</strong>
-                      </div>
-                    </div> <!-- .menu-food-item -->  
-                      
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Greek Salad</h3>
-                          <p>Romaine lettuce, tomato, onions, feta, pitted greek olives, cucumber and our house dressing (balsamic)- add Chicken $3 , Steak $5</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$11</strong>
-                      </div>
-                    </div> <!-- .menu-food-item --> 
-                  </div><!-- salads --> 
-                     
-                    <div class="tab-pane fade" id="pills-sandwiches" role="tabpanel" aria-labelledby="pills-sandwiches-tab">
-                    <p class="menusubtitle">All sandwiches are served with homemade chips.<br>Substitute fries or tots - $1. Substiture house salad or sweet potato fries - $2<br></p>  
-
-                        <div class="d-block d-md-flex menu-food-item">
-                          <div class="text order-1 mb-3">
-                            <h3>Sully's Burger</h3>
-                              <p>Served with lettuce, onion and tomato</p>
-                              <p><strong>Meat Choices:</strong> 1/2 lb Sirloin | 1/2 lb Turkey | Grilled Chicken | Blackbean</p>
-                              <p><strong>Cheese Choices:</strong> $1 - American | Cheddar | Swiss | Pepper Jack | Provolone <br>$2 - Bleu Cheese | Feta | Goat Cheese</p>
-                               <p><strong>Sauce and Toppings:</strong> $1 - Chipotle mayo | BBQ | Buffalo | Pesto | Grilled Onion | Mushroom | Jalapeno<br>$2 - Bacon | Chili | Avacado | Roasted Red Pepper | Arugula </p>
-                          </div>
-                          <div class="price order-2">
-                            <strong>$10</strong>
-                          </div>
-                        </div> <!-- .menu-food-item -->
-
-                        <div class="d-block d-md-flex menu-food-item">
-                          <div class="text order-1 mb-3">
-                            <h3>Meatball Sandwich</h3>
-                              <p>Homemade meatballs and marinara, topped with melted provolone. Add hot gardinera $1</p>
-                          </div>
-                          <div class="price order-2">
-                            <strong>$10</strong>
-                          </div>
-                        </div> <!-- .menu-food-item --> 
-
-                        <div class="d-block d-md-flex menu-food-item">
-                          <div class="text order-1 mb-3">
-                            <h3>Lamb Burger</h3>
-                              <p>Organic grass fed lamb with cucumber mint chutney, feta cheese, tzatziki sauce, lettuce, and onion on a brioche bun</p>
-                          </div>
-                          <div class="price order-2">
-                            <strong>$12</strong>
-                          </div>
-                        </div> <!-- .menu-food-item --> 
-
-                         <div class="d-block d-md-flex menu-food-item">
-                          <div class="text order-1 mb-3">
-                            <h3>Sully's BLT Club</h3>
-                              <p>Turkey breast, bacon, tomato, lettuce, avocado, provolone and chipotle mayo on toasted Italian bread</p>
-                          </div>
-                          <div class="price order-2">
-                            <strong>$10</strong>
-                          </div>
-                        </div> <!-- .menu-food-item --> 
-
-                        <div class="d-block d-md-flex menu-food-item">
-                          <div class="text order-1 mb-3">
-                            <h3>Grilled Chicken Sandwich</h3>
-                              <p>Panini with provolone, tomato, arugula, pesto and chipotle mayo. </p>
-                          </div>
-                          <div class="price order-2">
-                            <strong>$11</strong>
-                          </div>
-                        </div> <!-- .menu-food-item --> 
-
-                        <div class="d-block d-md-flex menu-food-item">
-                          <div class="text order-1 mb-3">
-                            <h3>Grilled Mahi Mahi Sandwhich</h3>
-                              <p>Grilled Mahi Mahi filet with lemon pepper aioli, arugula and tomato on a brioche bun.Served with a side salad with sesame vinaigrette </p>
-                          </div>
-                          <div class="price order-2">
-                            <strong>$12</strong>
-                          </div>
-                        </div> <!-- .menu-food-item --> 
-
-                        <div class="d-block d-md-flex menu-food-item">
-                          <div class="text order-1 mb-3">
-                            <h3>Beer Battered Cod and Chips</h3>
-                              <p>Served with homemade tartar sauce.</p>
-                          </div>
-                          <div class="price order-2">
-                            <strong>$12</strong>
-                          </div>
-                        </div> <!-- .menu-food-item --> 
-
-                        <div class="d-block d-md-flex menu-food-item">
-                          <div class="text order-1 mb-3">
-                            <h3>Pressed Grilled Cheese</h3>
-                              <p>Texas toast and enough American cheese to ooze out the sides. Served with chips.Add ham or tomato - $1, Smoked bacon $2 or Sully’s Style with bacon and tots inside - $3</p>
-                          </div>
-                          <div class="price order-2">
-                            <strong>$8</strong>
-                          </div>
-                        </div> <!-- .menu-food-item --> 
-
-                        <div class="d-block d-md-flex menu-food-item">
-                          <div class="text order-1 mb-3">
-                            <h3>Chicken Tender Basket</h3>
-                              <p>Six pieces of chicken tender with your choice of dipping sauce and homemade chips.</p>
-                          </div>
-                          <div class="price order-2">
-                            <strong>$9</strong>
-                          </div>
-                        </div> <!-- .menu-food-item --> 
-
-                        <div class="d-block d-md-flex menu-food-item">
-                          <div class="text order-1 mb-3">
-                            <h3>Italian Beef Sandwich</h3>
-                              <p>Italian Beef topped with melted mozzarella, gardinera and side of au jus.</p>
-                          </div>
-                          <div class="price order-2">
-                            <strong>$10</strong>
-                          </div>
-                        </div> <!-- .menu-food-item --> 
-
-                        <div class="d-block d-md-flex menu-food-item">
-                          <div class="text order-1 mb-3">
-                            <h3>Pulled Pork Sandwich</h3>
-                              <p>Pulled pork topped with shredded cabbage and North Carolina BBQ Sauce.</p>
-                          </div>
-                          <div class="price order-2">
-                            <strong>$10</strong>
-                          </div>
-                        </div> <!-- .menu-food-item --> 
-
-                        <div class="d-block d-md-flex menu-food-item">
-                          <div class="text order-1 mb-3">
-                            <h3>Veggie Club</h3>
-                              <p>Grilled veggies, tomato, lettuce, avocado, provolone and chipotle may0 served on italian bread</p>
-                          </div>
-                          <div class="price order-2">
-                            <strong>$9</strong>
-                          </div>
-                        </div> <!-- .menu-food-item --> 
-                    </div> <!-- Sandwiches -->  
-                    
-                    
-                    <div class="tab-pane fade" id="pills-wraps" role="tabpanel" aria-labelledby="pills-wraps-tab">
-                    
-                        <p class="menusubtitle">Add chips $1, fries $2, tots $2, house salad $3 or sweet potato fries $3<br>Any meats can be substituted with a blackbean burger</p>  
-
-                        <div class="d-block d-md-flex menu-food-item">
-                          <div class="text order-1 mb-3">
-                            <h3>Chicken Caesar</h3>
-                              <p>Same as the salad, wrapped up!</p>
-                          </div>
-                          <div class="price order-2">
-                            <strong>$10</strong>
-                          </div>
-                        </div><!-- .menu-food-item --> 
-
-                        <div class="d-block d-md-flex menu-food-item">
-                          <div class="text order-1 mb-3">
-                            <h3>Chicken and Bacon</h3>
-                              <p>Crispy fried chicken, tomatoes, red onion, cheddar, bacon and ranch.</p>
-                          </div>
-                          <div class="price order-2">
-                            <strong>$10</strong>
-                          </div>
-                        </div><!-- .menu-food-item --> 
-
-                        <div class="d-block d-md-flex menu-food-item">
-                          <div class="text order-1 mb-3">
-                            <h3>Veggie</h3>
-                              <p>Arugula, mushrooms, roasted red peppers, goat cheese, red onion, tomato.</p>
-                          </div>
-                          <div class="price order-2">
-                            <strong>$10</strong>
-                          </div>
-                        </div><!-- .menu-food-item --> 
-
-                        <div class="d-block d-md-flex menu-food-item">
-                          <div class="text order-1 mb-3">
-                            <h3>Steak</h3>
-                              <p>Romaine, tomato, onion, and bleu cheese dressing.</p>
-                          </div>
-                          <div class="price order-2">
-                            <strong>$12</strong>
-                          </div>
-                        </div><!-- .menu-food-item --> 
-
-                        <div class="d-block d-md-flex menu-food-item">
-                          <div class="text order-1 mb-3">
-                            <h3>Lamb</h3>
-                              <p>Grilled lamb, tzatziki sauce, lettuce, tomato, and onion</p>
-                          </div>
-                          <div class="price order-2">
-                            <strong>$12</strong>
-                          </div>
-                        </div><!-- .menu-food-item --> 
-
-                        <div class="d-block d-md-flex menu-food-item">
-                          <div class="text order-1 mb-3">
-                            <h3>Southwest Chicken</h3>
-                              <p>Same as the salad, all wrapped up!</p>
-                          </div>
-                          <div class="price order-2">
-                            <strong>$10</strong>
-                          </div>
-                        </div><!-- .menu-food-item -->       
-                    </div><!-- Wraps -->
-                    
-                    <div class="tab-pane fade" id="pills-pizza" role="tabpanel" aria-labelledby="pills-pizza-tab">
-                    
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>BBQ Chicken</h3>
-                          <p>Tomato sauce base, topped with mozzerella cheese, BBQ Chicken, red onions,bacon, and pineapple.</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$17</strong>
-                      </div>
-                    </div><!-- .menu-food-item -->
-                    
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>Roasted Veggie Pesto</h3>
-                          <p>A delicious homemade pesto base topped with zucchini, squash, eggplant, roasted red peppers and goat cheese.</p>
-                      </div>
-                      <div class="price order-2">
-                        <strong>$17</strong>
-                      </div>
-                    </div><!-- .menu-food-item -->
-                    
-                    <div class="d-block d-md-flex menu-food-item">
-                      <div class="text order-1 mb-3">
-                        <h3>The Basic 'Za</h3>
-                          <p>Cheese $10 | Sausage $12 | Pepperoni $12</p>
-                      </div>
-                    </div><!-- .menu-food-item -->      
-                    </div><!-- Pizza -->
-                    
-                    
-                    
-            </div>
-          </div>
-        </div> <!-- .section -->  
-        <!-- END MENU -->
           
-        <!-- 3rd PARTY ORDER BUTTONS -->
-         <div class="img_bg3" style="background-image: url(images/bottles2.jpeg);" data-stellar-background-ratio=".5">
-        <div class="section bkptryimg"  data-aos="fade-up">
-          <div class="container">  
-            <div class="row section-heading justify-content-center mb-5">
-              <div class="col-lg-12 col-md-7 col-sm-12 text-center ">
-                  <div class="col-md-12 col-sm-12 text-center">
-                      <a href="https://slicelife.com/restaurants/il/chicago/60642/sully-s-house/menu?utm_campaign=order_now_button&utm_medium=referral&utm_source=sullyshousemenu.com"><img src="images/slice.png" class="responsive-image" width="300"></a>
-
-                      <a href="https://www.grubhub.com/restaurant/sullys-house-1501-n-dayton-st-chicago/121599"><img src="images/grubhub.png" class="responsive-image" width="320"></a>
-                  </div>
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END 3rd PARTY ORDER BUTTONS -->
-
           
-         <!-- SPECIALS -->
+          <!-- SPECIALS -->
         <div class="section bg-white services-section" data-aos="fade-up">
           <div class="container">
             <div class="row section-heading justify-content-center mb-5">
@@ -814,7 +174,32 @@
           </div>
         </div> <!-- .section -->
         <!-- END SPECIALS -->
-  
+          
+          
+          
+          
+        <!-- 3rd PARTY ORDER BUTTONS -->
+         <div class="img_bg3" style="background-image: url(images/bottles2.jpeg);" data-stellar-background-ratio=".5">
+        <div class="section bkptryimg"  data-aos="fade-up">
+          <div class="container">  
+            <div class="row section-heading justify-content-center mb-5">
+              <div class="col-lg-12 col-md-7 col-sm-12 text-center ">
+                  <div class="col-md-12 col-sm-12 text-center">
+                      <a href="https://slicelife.com/restaurants/il/chicago/60642/sully-s-house/menu?utm_campaign=order_now_button&utm_medium=referral&utm_source=sullyshousemenu.com"><img src="images/slice.png" class="responsive-image" width="300"></a>
+
+                      <a href="https://www.grubhub.com/restaurant/sullys-house-1501-n-dayton-st-chicago/121599"><img src="images/grubhub.png" class="responsive-image" width="320"></a>
+                  </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END 3rd PARTY ORDER BUTTONS -->
+
+        <!-- Start Calendar -->
+        <div class="section bg-white" id="section-about">
+          <div id='calendar'></div>
+        </div> <!-- .section -->
 
         <!-- PERSONALITIES -->
         <div class="section bg-white" data-aos="fade-up">
@@ -836,13 +221,6 @@
                     <div class="ftco-38-body">
                       <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
                       <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. It is a paradisematic country.</p>
-<!--
-                      <p>
-                        <a href="#" class="p-2"><span class="fa fa-facebook"></span></a>
-                        <a href="#" class="p-2"><span class="fa fa-twitter"></span></a>
-                        <a href="#" class="p-2"><span class="fa fa-instagram"></span></a>
-                      </p>
--->
                     </div>
                   </div>
                 </div>
@@ -859,18 +237,19 @@
                       <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
                       <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. It is a paradisematic country.</p>
                     </div>
-                  </div>
                 </div>
               </div>
               <!-- <div class="col-md-4"></div> -->
+              </div>
             </div>
           </div>
         </div> <!-- .section -->
         <!-- END PERSONALITIES -->
-
+         <div class="img_bg3" style="background-image: url(images/bar.jpeg);" data-stellar-background-ratio="1.1">
+          </div>
         
         <!-- BOOK A PARTY -->
-        <div class="section" data-aos="fade-up" id="section-reservation">
+        <div class="section bg-white" data-aos="fade-up" id="section-reservation">
           <div class="container">
             <div class="row section-heading justify-content-center mb-5">
               <div class="col-md-8 text-center">
@@ -1021,16 +400,6 @@
                   <div class="item">
                         <img src="images/inside1.png" alt="inside 1" class="mb-3">
                   </div>
-                  <div class="item">
-                    <blockquote class="testimonial">
-                      <p>&ldquo;The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.&rdquo;</p>
-                      <div class="author">
-                        <img src="images/person_2.jpg" alt="Image placeholder" class="mb-3">
-                        <h4>Geert Green</h4>
-                        <p>CEO, Founder</p>
-                      </div>
-                    </blockquote>
-                  </div>
                 </div>
               </div>
             </div>
@@ -1144,6 +513,9 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/fullcalendar.js"></script>
+    <script src="js/gcal.js"></script>
 
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/jquery.timepicker.min.js"></script>

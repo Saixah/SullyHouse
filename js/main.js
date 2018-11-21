@@ -151,6 +151,38 @@ AOS.init({
 	$('#dropdown04').on('show.bs.dropdown', function () {
 	  console.log('show');
 	});
+    
+    
+    // calendar
+    $(function(){
+        $('#calendar').fullCalendar({
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'month,listYear'
+            },
+            
+            displayEventTime:false, 
+            
+            // THIS KEY WON'T WORK IN PRODUCTION!!!
+            // To make your own Google API key, follow the directions here:
+            // http://fullcalendar.io/docs/google_calendar/
+            googleCalendarApiKey: 'AIzaSyDcnW6WejpTOCffshGDDb4neIrXVUA1EAE',
+            
+            // US Holidays
+            events: 'en.usa#holiday@group.v.calendar.google.com',
+            
+            eventColor: '#7E0606',
+            eventClick: function(event) {
+                // opens events in a popup window
+                window.open(event.url, 'gcalevent', 'width=700,height=600');
+                return false;
+            },
+            loading: function(bool) {
+            $('#loading').toggle(bool);
+            }
+        });
+    });
 
 	// home slider
 	$('.home-slider').owlCarousel({
@@ -238,6 +270,7 @@ AOS.init({
 	// owl carousel
 	var major2Carousel = $('.js-carousel-2');
 	major2Carousel.owlCarousel({
+    items:4,
     loop:true,
     autoplay: true,
     stagePadding: 7,
@@ -268,7 +301,7 @@ AOS.init({
 
   $('.centernonloop').owlCarousel({
     center: true,
-    items: 1,
+    items: 3,
     loop: false,
     margin:10,
     dots: true,
