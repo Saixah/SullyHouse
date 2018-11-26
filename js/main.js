@@ -8,7 +8,7 @@ AOS.init({
 	'use strict';
 
   $(window).stellar({
-    responsive: false,
+    responsive: true,
     parallaxBackgrounds: true,
     parallaxElements: true,
     horizontalScrolling: false,
@@ -159,18 +159,31 @@ AOS.init({
             header: {
                 left: 'prev,next today',
                 center: 'title',
-                right: 'month,listYear'
+                right: 'month,listMonth'
             },
             
+            defaultView:'listMonth',
             displayEventTime:false,
             
-            // THIS KEY WON'T WORK IN PRODUCTION!!!
-            // To make your own Google API key, follow the directions here:
-            // http://fullcalendar.io/docs/google_calendar/
-            googleCalendarApiKey: 'AIzaSyDcnW6WejpTOCffshGDDb4neIrXVUA1EAE',
-            
-            // US Holidays
-            events: 'en.usa#holiday@group.v.calendar.google.com',
+            googleCalendarApiKey: 'AIzaSyDjHE3F5UREsh7XrB6WaUqxpYZvkXTRprA',
+
+            eventSources: [
+              {//Bears
+                googleCalendarId: 'sullyshouse.com_e2akjarqmahab7u3olp41a5ko4@group.calendar.google.com'
+              },
+              {//Holidays
+                googleCalendarId:'en.usa#holiday@group.v.calendar.google.com'
+              },
+              {//Bulls 
+              googleCalendarId:'sullyshouse.com_m5m4tcgp68d7r4isdla5rj23r0@group.calendar.google.com'
+              },
+              {//Blackhawks
+                googleCalendarId:'sullyshouse.com_g8c6r4g5ukgcrsqs5s955o5il0@group.calendar.google.com' 
+              },
+              {//Cubs
+                googleCalendarId:'sullyshouse.com_dn5oahkseidhivgijrm954n188@group.calendar.google.com' 
+              }
+            ],
             
             eventColor: '#7E0606',
             eventClick: function(event) {
@@ -183,33 +196,30 @@ AOS.init({
             }
         });
     });
+    
+    //instafeed
+$(document).ready(function() {
+    var userFeed = new Instafeed({
+        get: 'user',
+        userId: '297186662',
+        limit: 32,
+        resolution: 'thumbnail',
+        accessToken: '297186662.1677ed0.5539edea04f14628ac44f0b93f0375ba',
+        sortBy: 'most-recent',
+        template: '<div class="col-md-3 col-lg-2 col-sm-12 instaimg"><a href="{{image}}" title="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}"/></a></div>',
+    });
+    userFeed.run();
+    });
 
-	// home slider
-	$('.home-slider').owlCarousel({
-    loop:true,
-    autoplay: true,
-    margin:0,
-    animateOut: 'fadeOut',
-    animateIn: 'fadeIn',
-    nav:true,
-    autoplayHoverPause: true,
-    items: 1,
-    navText : ["<span class='ion-chevron-left'></span>","<span class='ion-chevron-right'></span>"],
-    responsive:{
-      0:{
-        items:1,
-        nav:false
-      },
-      600:{
-        items:1,
-        nav:false
-      },
-      1000:{
-        items:1,
-        nav:true
-      }
-    }
-	});
+// This will create a single gallery from all elements that have class "gallery"
+$('.gallery').magnificPopup({
+  type: 'image',
+  delegate:'a',
+  gallery:{
+  enabled:true
+  }
+});
+
 
   $('.home-slider-loop-false').owlCarousel({
     loop:false,
@@ -320,139 +330,16 @@ AOS.init({
 
   //------- Google Map  js --------//  
 
-    if (document.getElementById("map")) {
-        google.maps.event.addDomListener(window, 'load', init);
+   function initMap() {
+  // The location of Uluru
+  var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
 
-        function init() {
-            var mapOptions = {
-                zoom: 11,
-                center: new google.maps.LatLng(41.908, -87.649), // SullysHouseChicago
-                styles: [{
-                    "featureType": "water",
-                    "elementType": "geometry",
-                    "stylers": [{
-                        "color": "#e9e9e9"
-                    }, {
-                        "lightness": 17
-                    }]
-                }, {
-                    "featureType": "landscape",
-                    "elementType": "geometry",
-                    "stylers": [{
-                        "color": "#f5f5f5"
-                    }, {
-                        "lightness": 20
-                    }]
-                }, {
-                    "featureType": "road.highway",
-                    "elementType": "geometry.fill",
-                    "stylers": [{
-                        "color": "#ffffff"
-                    }, {
-                        "lightness": 17
-                    }]
-                }, {
-                    "featureType": "road.highway",
-                    "elementType": "geometry.stroke",
-                    "stylers": [{
-                        "color": "#ffffff"
-                    }, {
-                        "lightness": 29
-                    }, {
-                        "weight": 0.2
-                    }]
-                }, {
-                    "featureType": "road.arterial",
-                    "elementType": "geometry",
-                    "stylers": [{
-                        "color": "#ffffff"
-                    }, {
-                        "lightness": 18
-                    }]
-                }, {
-                    "featureType": "road.local",
-                    "elementType": "geometry",
-                    "stylers": [{
-                        "color": "#ffffff"
-                    }, {
-                        "lightness": 16
-                    }]
-                }, {
-                    "featureType": "poi",
-                    "elementType": "geometry",
-                    "stylers": [{
-                        "color": "#f5f5f5"
-                    }, {
-                        "lightness": 21
-                    }]
-                }, {
-                    "featureType": "poi.park",
-                    "elementType": "geometry",
-                    "stylers": [{
-                        "color": "#dedede"
-                    }, {
-                        "lightness": 21
-                    }]
-                }, {
-                    "elementType": "labels.text.stroke",
-                    "stylers": [{
-                        "visibility": "on"
-                    }, {
-                        "color": "#ffffff"
-                    }, {
-                        "lightness": 16
-                    }]
-                }, {
-                    "elementType": "labels.text.fill",
-                    "stylers": [{
-                        "saturation": 36
-                    }, {
-                        "color": "#333333"
-                    }, {
-                        "lightness": 40
-                    }]
-                }, {
-                    "elementType": "labels.icon",
-                    "stylers": [{
-                        "visibility": "off"
-                    }]
-                }, {
-                    "featureType": "transit",
-                    "elementType": "geometry",
-                    "stylers": [{
-                        "color": "#f2f2f2"
-                    }, {
-                        "lightness": 19
-                    }]
-                }, {
-                    "featureType": "administrative",
-                    "elementType": "geometry.fill",
-                    "stylers": [{
-                        "color": "#fefefe"
-                    }, {
-                        "lightness": 20
-                    }]
-                }, {
-                    "featureType": "administrative",
-                    "elementType": "geometry.stroke",
-                    "stylers": [{
-                        "color": "#fefefe"
-                    }, {
-                        "lightness": 17
-                    }, {
-                        "weight": 1.2
-                    }]
-                }]
-            };
-            var mapElement = document.getElementById('map');
-            var map = new google.maps.Map(mapElement, mapOptions);
-            var marker = new google.maps.Marker({
-                position: new google.maps.LatLng(41.9086, -87.6491),
-                map: map,
-                title: 'Snazzy!'
-            });
-        }
-    }
 
 
 
