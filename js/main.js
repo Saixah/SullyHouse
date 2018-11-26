@@ -165,7 +165,7 @@ AOS.init({
             defaultView:'listMonth',
             displayEventTime:false,
             
-            googleCalendarApiKey: 'AIzaSyDjHE3F5UREsh7XrB6WaUqxpYZvkXTRprA',
+            googleCalendarApiKey: '#',
 
             eventSources: [
               {//Bears
